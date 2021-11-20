@@ -1,4 +1,4 @@
-import { createCoverageSummary } from "istanbul-lib-coverage"
+import { Component } from "react"
 import { Row,Card,Button,Col,Container} from "react-bootstrap"
 import images from '../data/horror.json'
 
@@ -6,7 +6,14 @@ import images from '../data/horror.json'
 
 
 
-const LatestRelease = ()=>{
+class  LatestRelease extends Component {
+    state = {
+      
+
+    }
+    render() {
+
+
     return (
         <Container>
             <Row>
@@ -22,7 +29,8 @@ const LatestRelease = ()=>{
     <Card.Text>
       {image.category}
     </Card.Text>
-    <Button variant="primary">{image.price}</Button>
+    <Button variant="primary">{image.price} 
+    </Button>
   </Card.Body>
 </Card>
 </Col>
@@ -33,6 +41,7 @@ const LatestRelease = ()=>{
         </Container>
 
     )
+}
 }
 
 
